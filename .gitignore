@@ -1,0 +1,45 @@
+# --- Виртуальное окружение ---
+.venv/
+venv/
+env/
+
+# --- Кэш и служебные файлы Python ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Сборка пакета ---
+build/
+dist/
+*.egg-info/
+
+# --- Секреты (пароли, токены, ключи API) ---
+.env
+.env.*
+!.env.example
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Данные и обученные модели ---
+# Большие файлы не храним в git: GitHub не принимает файлы больше 100 МБ.
+# В README укажите, откуда скачать данные.
+# Если датасет маленький (до нескольких МБ) и нужен для запуска, уберите строку data/
+data/
+models/
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.h5
+*.onnx
+
+# --- Редакторы и ОС ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
